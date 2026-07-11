@@ -1,0 +1,300 @@
+/* =============================== CYBERNIGHT – EDGERUNNERS GLASS (fond ultra-visible – ajusté février 2026) =============================== */
+
+:root {
+    --glass-bg: rgba(8, 18, 32, 0.20);
+    --glass-strong: rgba(8, 18, 32, 0.28);
+    --cyan: #00F0FF;
+    --cyan-dark: #0098A8;
+    --cyan-light: #66F5FF;
+    --cyan-glow: #00B8CC;
+    --text-main: #E6F1FF;
+    --text-soft: #9FB3C8;
+
+    --image_url: url("file:///home/ilhamridho04/.config/spicetify/Themes/NgodingSkuyy/assets/fav-wallpaper.jpg");
+}
+
+
+.Root__top-container {
+    position: relative;
+    background-color: transparent !important;
+    overflow: hidden;
+}
+
+/* ========================= */
+/* FOND PAR DÉFAUT (Night City) */
+/* ========================= */
+.Root__top-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("file:///home/ilhamridho04/.config/spicetify/Themes/NgodingSkuyy/assets/fav-wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -3;
+    opacity: 1;
+    transition: opacity 1.8s ease-in-out;
+}
+
+.Root__top-container.has-custom-bg::before {
+    opacity: 0;
+}
+
+/* ========================= */
+/* LAYERS DYNAMIQUES */
+/* ========================= */
+.dynamic-bg-layer {
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -2;
+    opacity: 0;
+    transition: opacity 1.8s ease-in-out;
+    will-change: opacity;
+}
+
+
+
+
+* {
+    --spice-main-elevated: rgba(0, 0, 0, 0.4)
+}
+
+.Root__top-container:has(#VideoPlayerCinema_ReactPortal) {
+    padding: 0;
+}
+
+/* Do not display background elements when fullscreen lyrics */
+#main:has(#VideoPlayerCinema_ReactPortal) {
+
+    & .Root__main-view,
+    .Root__right-sidebar,
+    .Root__nav-bar {
+        display: none !important;
+    }
+
+    /* .Root__globalNav { background: black !important; } */
+}
+
+/* Do not display main view when expanded library */
+#main:has(.main-yourLibraryX-libraryRootlist > * > ul[role="treegrid"]) .Root__main-view {
+    display: none !important;
+}
+
+:has([data-overlayscrollbars-initialize="true"]):has(#VideoPlayerCinema_ReactPortal) {
+    outline: none !important;
+}
+
+.progress-bar__slider,
+.REMgVhoMClSNRZve5xaJ,
+.x-progressBar-handle {
+
+    background-color: transparent !important;
+    background-image: url("file:///home/ilhamridho04/.config/spicetify/Themes/NgodingSkuyy/assets/david.png");
+    background-size: cover;
+    height: 30px;
+    width: 20px;
+    box-shadow: none;
+    display: flex;
+}
+
+.xwmHcoGFMXA0G2iBT3jO {
+    background-color: transparent !important;
+}
+
+
+.encore-dark-theme .encore-bright-accent-set {
+    background-color: #0098A8d9 !important;
+}
+
+.vSotTDmUOWTotCYudlgI,
+.x-progressBar-fillColor,
+.x-progressBar-foreground {
+    background-image: linear-gradient(90deg,
+            #00F0FF 0%,
+            #66F5FF 12%,
+            #00B8CC 38%,
+            #0098A8 62%,
+            #007A8A 82%,
+            #005F6B 90%,
+            #00F0FF 100%) !important;
+
+    background-size: 300% 100%;
+    /* ← on passe à 300% pour plus d'espace */
+    animation: cyberMove 9s linear infinite;
+}
+
+@keyframes cyberMove {
+    0% {
+        background-position: 0% 0;
+    }
+
+    100% {
+        background-position: 300% 0;
+    }
+}
+
+.main-topBar-background {
+    background: linear-gradient(90deg,
+            rgba(0, 40, 60, 0.85),
+            rgba(0, 90, 120, 0.85)) !important;
+
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(0, 240, 255, 0.35);
+}
+
+/* .os-scrollbar-handle {
+    background: linear-gradient(
+        to bottom,
+        #00ff9c,
+        #00f0ff
+    );
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,255,156,0.6);
+} */
+
+/* Glows cyber */
+.cyber-smart svg,
+button[aria-checked="true"] svg,
+button[aria-checked="mixed"] svg,
+button[aria-pressed="true"] svg,
+button[data-active="true"] svg,
+button.transfrom_this_shit_gng svg,
+#SpicyLyricsPageSvg {
+    fill: var(--cyan) !important;
+    filter: drop-shadow(0 0 10px var(--cyan-glow)) drop-shadow(0 0 4px var(--cyan));
+}
+
+button.scale_it_bro svg {
+    scale: 2;
+}
+
+.main-genericButton-button.main-genericButton-buttonActiveDot:after,
+.Button-buttonTertiary-textBrightAccent-small-iconOnly-useBrowserDefaultFocusStyle:after,
+.EIFdvMxVD8zJO_zaZubt:before,
+.x_I4_QDM5MZhGKhtI6fb:after,
+.StyledTabItem-tab-tabItem-useBrowserDefaultFocusStyle[aria-selected="true"]::before {
+    background-color: var(--cyan) !important;
+}
+
+.eYJgrgW01l7dHKuMJidG,
+.ListRowText-bodyMedium-textBase-listRowTitle-useBrowserDefaultFocusStyle {
+    color: var(--text-soft) !important;
+}
+
+.encore-internal-color-text-bright-accent {
+    color: var(--cyan-light) !important;
+}
+
+/* Global */
+.Root__globalNav,
+/* Top bar */
+.Root__nav-bar,
+.main-entityHeader-container>*,
+.playlist-playlist-playlistContent,
+/* Playlist colored background */
+.main-entityHeader-backgroundColor,
+.playlist-playlist-actionBarBackground-background,
+.main-actionBarBackground-background,
+.Root__now-playing-bar>button,
+.lyrics-lyrics-background,
+.main-view-container__scroll-node-child>main>section>div>div:nth-child(2),
+.Bdcf5g__Rug3TGqSdbiy,
+.Root__now-playing-bar,
+/* Sidebar left your library */
+#Desktop_LeftSidebar_Id,
+.YourLibraryX,
+#Desktop_PanelContainer_Id::before,
+.main-home-homeHeader,
+.main-view-container__scroll-node-child>*>*,
+.artist-artistDiscography-headerContainer,
+.main-view-container__scroll-node-child>main>section>div:last-child,
+.search-searchCategory-contentArea::after,
+.main-nowPlayingView-contextItemInfo::before,
+.Box-group-naked-listRow-isInteractive-hasLeadingOrMedia-draggable-minBlockSize_56px,
+/* Artist page colored background */
+.main-view-container .before-scroll-node>*>:last-child,
+.main-view-container .before-scroll-node>*>:last-child:after,
+/* Fullscreen artist page on playing music */
+/* [data-overlayscrollbars-viewport="scrollbarHidden overflowXHidden overflowYScroll"]>*>*>*>*>*:first-child, */
+/* Right sidebar for queue */
+.Root__right-sidebar>*,
+/* Fullscreen lyrics */
+[data-overlayscrollbars-initialize="true"]:has(#VideoPlayerCinema_ReactPortal),
+.lyrics-lyrics-container:first-child,
+:has(+.lyrics-lyrics-container),
+/* Spicetify marketplace */
+.marketplace-header
+
+/* Remove bg */
+    {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+.view-homeShortcutsGrid-shortcut,
+#Desktop_PanelContainer_Id,
+/* Sidebar left your library */
+.Root__main-view,
+.main-yourLibraryX-library,
+/* Filter tags */
+.ChipInnerComponent-sm {
+    background-color: var(--spice-main-elevated) !important;
+}
+
+/* Artist page gradient image */
+.main-view-container .before-scroll-node>*>:first-child {
+    mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0));
+    position: absolute;
+}
+
+#Desktop_PanelContainer_Id {
+    border-radius: 8px;
+}
+
+/* Rotate cat paw previous and next buttons */
+[data-testid="control-button-skip-forward"] {
+    scale: 2;
+}
+
+[data-testid="control-button-skip-back"] {
+    rotate: 180deg;
+    scale: 2;
+}
+
+.encore-dark-theme .encore-inverted-light-set {
+    --text-base: var(--cyan) !important;
+    background-color: transparent !important;
+    scale: 2;
+}
+
+svg path {
+    fill-rule: evenodd !important;
+}
+
+button[aria-label="Ajouter à la playlist"],
+button[aria-label="Add to playlist"] {
+    scale: 2;
+}
+
+[data-testid="now-playing-widget"]>*>*:not([role="switch"]):not([aria-label="Ajouter à la playlist"]):not([aria-label="Add to playlist"]) svg,
+.main-trackList-rowSectionEnd>*:not([role="switch"]):not([aria-label="Ajouter à la playlist"]):not([aria-label="Add to playlist"]) svg,
+.Button-buttonTertiary-textBrightAccent-medium-iconOnly-useBrowserDefaultFocusStyle-condensed:not([aria-label="Ajouter à la playlist"]):not([aria-label="Add to playlist"]) svg,
+.main-nowPlayingView-contextItemInfo [aria-checked="false"]:not([role="switch"]):not([aria-label="Ajouter à la playlist"]):not([aria-label="Add to playlist"]) svg,
+button[aria-label*="options"] svg {
+    fill: var(--cyan) !important;
+    filter: drop-shadow(0 0 10px var(--cyan-glow)) drop-shadow(0 0 4px var(--cyan));
+    scale: 1.5;
+}
+
+[data-testid="control-button-repeat"] {
+    scale: 1.7;
+}
+
+/* button[data-testid="control-button-playpause"]:hover {
+    box-shadow: 0 0 24px var(--cyan), 0 0 48px rgba(0, 240, 255, 0.7);
+} */
