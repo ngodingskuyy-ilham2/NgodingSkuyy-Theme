@@ -11,10 +11,10 @@ console.log("[DEBUG] dynamic-bg.js chargé");
     console.log("[DEBUG] Player détecté");
 
     const TRACK_BACKGROUNDS = {
-        "spotify:track:7mykoq6R3BArsSpNDjFQTm": "https://raw.githubusercontent.com/me974974/CyberNight/main/assets/i_really_want_to_stay_at_your_house.png?v=1",
-        "spotify:track:5BgztqoQ6NHOhNg5yq8SUQ": "https://raw.githubusercontent.com/me974974/CyberNight/main/assets/i_really_want_to_stay_at_your_house.png?v=1",
-        "spotify:track:1qpGMJi0ippCaMUOs7cz2q": "https://raw.githubusercontent.com/me974974/CyberNight/main/assets/let_you_down.png?v=1",
-        "spotify:track:24wT9mkalLcUIDt9rkpYJJ": "https://raw.githubusercontent.com/me974974/CyberNight/main/assets/let_you_down.png?v=1",
+        "spotify:track:7mykoq6R3BArsSpNDjFQTm": "https://raw.githubusercontent.com/ngodingskuyy-ilham2/NgodingSkuyy-Theme/main/assets/i_really_want_to_stay_at_your_house.png?v=1",
+        "spotify:track:5BgztqoQ6NHOhNg5yq8SUQ": "https://raw.githubusercontent.com/ngodingskuyy-ilham2/NgodingSkuyy-Theme/main/assets/i_really_want_to_stay_at_your_house.png?v=1",
+        "spotify:track:1qpGMJi0ippCaMUOs7cz2q": "https://raw.githubusercontent.com/ngodingskuyy-ilham2/NgodingSkuyy-Theme/main/assets/let_you_down.png?v=1",
+        "spotify:track:24wT9mkalLcUIDt9rkpYJJ": "https://raw.githubusercontent.com/ngodingskuyy-ilham2/NgodingSkuyy-Theme/main/assets/let_you_down.png?v=1",
     };
 
     const CONTAINER = () => document.querySelector(".Root__top-container");
